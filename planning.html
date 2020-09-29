@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>planning</title>
+    <link rel="Stylesheet" href="css/style.css">
+    <script type="text/javascript" src="javascript/planning.js"></script>
+</head>
+<body>
+    <h1>CSS3</h1>
+    <h2>OBJETIVOS</h2>
+    <h3>Objetivo General</h3>
+    <p>Desarrollar sitios web en formato HTML5 y CSS3,  para
+        ser visualizados en diferentes navegadores teniendo en cuenta su
+        funcionabilidad y usabilidad, por medio del uso de diferentes editores
+        de código propuestos en el desarrollo del curso.</p>
+    <h3>Objetivos Especificos</h3>
+    <ul>
+        <li>Aprender y entender acerca de las hojas de estilo en cascada CSS.</li>
+        <li>Consultar sobre los distintos estilos que posee CSS3.</li>
+        <li>Poder entender sobre los selectores en css.</li>
+    </ul>
+    <h2>Materiales: </h2>
+    <ul>
+        <li>Curso de desarrollo web con HTML y CSS y Javascript Básico:
+            <a href="https://www.udemy.com/course/curso-de-desarrollo-web-con-html-css-y-javascript/learn/lecture/18055297#overview">
+                Udemy</a></li>
+        <li>Crea una pagina web adaptable a dispositivos en HTML y CSS:
+            <a href="https://www.udemy.com/course/crea-una-pagina-web/learn/lecture/16672608#overview">
+                Udemy</a></li>
+        <li>Curso HTML5 y CSS3 desde Básico a avanzado:
+            <a href="https://www.udemy.com/course/curso-de-html5-y-css3-desde-basico-a-avanzado/learn/lecture/17104782#overview">
+                Udemy</a></li>
+        <li>HTML Ya:
+            <a href="https://www.tutorialesprogramacionya.com/htmlya/">
+                Tutoriales Ya</a></li>
+        <li>HTML5 Ya:
+            <a href="https://www.tutorialesprogramacionya.com/htmlya/html5/">
+                Tutoriales Ya</a></li>
+        <li>CSS Ya:
+            <a href="https://www.tutorialesprogramacionya.com/cssya/">
+                Tutoriales Ya</a></li>
+        <li>CSS3 Ya:
+            <a href="https://www.tutorialesprogramacionya.com/cssya/css3ya/">
+                Tutoriales Ya</a></li>
+    </ul>
+
+    <h2>Contenido del curso</h2>
+    <p>A continuación veremos una breve introducción de cada una de las etiquetas que aprenderemos durante el curso:</p>
+    <ul>
+        <li><h3>Estilos internos</h3>
+            <p>Un estilo interno encerrado en etiquetas <strong>style</strong> dentro de un documento HTML funciona
+                como una hoja de estilo externa, excepto que vive en el documento HTML que diseña en lugar de en un
+                archivo separado, y por lo tanto solo se puede aplicar al documento en el que este se encuentra. <br><br>
+                Tenga en cuenta que este elemento debe estar dentro del elemento <strong>head</strong> para la validación de HTML
+                (aunque funcionará en todos los navegadores actuales si se coloca en el body).<br><br>
+                <a href="contruccion.html">Ver más...</a></p>
+        </li>
+        <li><h3>Estilos externos</h3>
+            <p>En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan
+                mediante la etiqueta <strong>link</strong>. <br><br>
+                Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML
+                puede enlazar tantos archivos CSS como necesite.<br><br>
+                <a href="contruccion.html">Ver más...</a></p>
+        </li>
+        <li><h3>Selectores CSS</h3>
+            <p>Los selectores definen sobre qué elementos se aplicará un conjunto de reglas CSS.
+                <h3>Selectores básicos</h3>
+                <strong>Selector de tipo</strong><br>
+                Selecciona todos los elementos que coinciden con el nombre del elemento especificado.<br>
+                <strong>Sintaxis:</strong> eltname<br>
+                <strong>Ejemplo:</strong> input se aplicará a cualquier elemento <strong><'input'></strong>.<br><br>
+
+                <strong>Selector de clase</strong><br>
+                Selecciona todos los elementos que tienen el atributo de class especificado.<br>
+                <strong>Sintaxis:</strong> .classname<br>
+                <strong>Ejemplo:</strong> .index seleccionará cualquier elemento que tenga la clase "index".<br><br>
+
+                <strong>Selector de ID</strong><br>
+                Selecciona un elemento basándose en el valor de su atributo id. Solo puede haber un elemento con un
+                determinado ID dentro de un documento.<br>
+                <strong>Sintaxis:</strong> #idname<br>
+                <strong>Ejemplo:</strong> #toc se aplicará a cualquier elemento que tenga el ID "toc".<br><br>
+
+                <strong>Selector universal</strong><br>
+                Selecciona todos los elementos. Opcionalmente, puede estar restringido a un espacio de nombre específico
+                o a todos los espacios de nombres.<br>
+                <strong>Sintaxis:</strong> * ns|* *|*<br>
+                <strong>Ejemplo:</strong> * se aplicará a todos los elementos del documento.<br><br>
+
+                <strong>Selector de atributo</strong><br>
+                Selecciona elementos basándose en el valor de un determinado atributo.<br>
+                <strong>Sintaxis:</strong> [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value]
+                [attr*=value]<br>
+                <strong>Ejemplo:</strong> [autoplay] seleccionará todos los elementos que tengan el atributo "autoplay"
+                establecido (a cualquier valor).<br><br>
+                <a href="contruccion.html">Ver más...</a></p>
+        </li>
+    </ul>
+    <h2>Mockup Pantalla Principal</h2>
+    <br><br><br>
+    <form name="form" action="index.html">
+        <input class="boton" type="button" value="Regresar" onclick="verificar()"><br>
+    </form>
+</body>
+</html>

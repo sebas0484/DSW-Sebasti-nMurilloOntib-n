@@ -1,0 +1,18 @@
+.cabecera{
+    padding-bottom: 30px;
+    background-color: #000000;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: #ffffff;
+}
+.contenido{
+     background-color: #46769f;
+ }
+.fase2{
+    background-color: #46769f;
+}
+a{
+    color: white;
+}
