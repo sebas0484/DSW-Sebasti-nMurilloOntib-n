@@ -1,0 +1,25 @@
+.img_css3{
+    height: 80px;
+    width: 105px;
+    margin-left: 600px;
+}
+.logo_unad{
+    margin-right: 400px;
+}
+h1{
+    text-align: center;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0px;
+    color: #005883;
+}
+.separador{
+    height: 10px;
+    background-color: #F47920;
+}
+.separador_dos{
+    height: 10px;
+    background-color: #F47920;
+    width: fit-content;
+    margin: auto;
+ }

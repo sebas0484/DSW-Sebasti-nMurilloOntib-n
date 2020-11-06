@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estilos Internos</title>
+    <link rel="Stylesheet" href="css/estilos_internos.css">
+    <link rel="Stylesheet" href="css/menu.css">
+    <link rel="Stylesheet" href="css/header.css">
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <a href="index.html"><img class="logo_unad_dos" src="resources/img/img_horizontal_unad.PNG" alt=""></a>
+        </td>
+        <td class="titulo">
+            <h1 class="txt_header">CSS3 - Estilos internos</h1>
+        </td>
+        <td>
+            <img class="img_css3_dos" src="resources/img/img_css3.png" alt="">
+        </td>
+    </tr>
+</table>
+
+<header>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="#">Conceptos</a>
+                <ul class="submenu">
+                    <li><a href="estilosInternos.html">Estilos internos</a></li>
+                    <li><a href="estilosExternos.html">Estilos externos</a></li>
+                    <li><a href="selectoresCss.html">Selectores CSS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="submenu">
+                    <li><a href="recursos_introduccion.html">Introduccion</a></li>
+                    <li><a href="recursos_selectores.html">Selectores</a></li>
+                    <li><a href="recursos_unidades_de_medida.html">Unidades de medida</a></li>
+                    <li><a href="recursos_unidades_de_color.html">Unidades de color</a></li>
+                    <li><a href="recursos_modelo_de_caja.html">Modelo de caja</a></li>
+                    <li><a href="recursos_fondos.html">Fondos</a></li>
+                    <li><a href="recursos__osicionamiento_de_cajas.html">Posicionamiento de cajas</a></li>
+                    <li><a href="recursos_texto_y_tipografia.html">Texto y tipografia</a></li>
+                    <li><a href="contruccion.html">Enlaces</a></li>
+                </ul>
+            </li>
+            <li><a href="autoevaluacion01.html">Autoevaluación</a>
+                <ul class="submenu">
+                    <li><a href="contruccion.html">Seccion #1</a></li>
+                    <li><a href="contruccion.html">Seccion #2</a></li>
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="separador"></div>
+<h3>Estilos internos</h3>
+<p class="txt_inicio">Un estilo interno encerrado en etiquetas <strong>style</strong> dentro de un documento HTML funciona
+    como una hoja de estilo externa, excepto que vive en el documento HTML que diseña en lugar de en un
+    archivo separado, y por lo tanto solo se puede aplicar al documento en el que este se encuentra. <br><br>
+    Tenga en cuenta que este elemento debe estar dentro del elemento <strong>head</strong> para la validación de HTML
+    (aunque funcionará en todos los navegadores actuales si se coloca en el body).<br><br>
+    Vamos a ver ahora cómo podemos definir esos estilos en la cabecera del documento HTML usando la siguiente sintaxis:</p>
+<img src="resources/img/img_css_interno.png">
+<p class="txt_inicio">Las diferentes propiedades y valores se pueden poner en una misma línea o en distintas líneas según
+    se prefiera (siempre separados mediante punto y coma).</p>
+<p class="txt_inicio">Dentro de las etiquetas < head > … < /head > incluiremos una etiqueta de apertura de declaración de estilos
+    < style type=”text/css” >, a continuación colocaremos la definición de tantos estilos como deseemos y cerraremos la
+    declaración con < /style >. En HTML 5 no es necesario especificar type =”text/css” pero de momento seguimos recomendando
+    que se use esta sintaxis.
+    <br><br>
+    En nuestro código de ejemplo el cambio de los elementos del menú para que tengan el texto color verde y el icono o
+    símbolo de viñeta de color rojo se haría de esta forma:</p>
+<img src="resources/img/img_css3_interno_dos.png">
+<p class="txt_inicio">Puedes comprobar que hemos usado las mismas propiedades CSS y los mismos valores que usábamos en línea.
+    <br><br>
+    Visualiza la página en tu navegador. El resultado para el menú será el mismo que cuando aplicamos CSS en línea:
+</p>
+<img src="resources/img/img_css3_interno_tres.png">
+<p class="txt_inicio">No obstante podrás comprobar que hay otros elementos de la página web que también se ven afectados,
+    por ejemplo los links presentes en el texto. Esto se debe a que hay una diferencia importante entre aplicar estilos
+    CSS en línea y aplicarlos como CSS interno en la cabecera < head > … < /head > del documento HTML. Al aplicar estilos
+    en línea, tenemos que repetir la aplicación de estilos en cada una de las líneas que queramos modificar y en cada
+    ocasión afectamos a únicamente una línea. Con la aplicación de estilos interna nos basta con declarar una vez el
+    estilo y el tipo de elemento al que se aplica, y automáticamente se aplicará a todos los elementos de ese tipo
+    existentes dentro de la página web. Esto permite que en una página web de gran extensión nos ahorremos tener que
+    escribir múltiples veces la definición de estilos (una en cada línea), ya que una sola declaración inicial nos bastará,
+    lo cual es una ventaja bastante evidente.
+    <br><br>
+    Sin embargo ahora surge una cuestión adicional: es posible que tengamos dos o más listas de tipo < ul > y en algunos
+    casos, por ejemplo menús, queramos aplicar un estilo, y en otros casos, por ejemplo listas de elementos dentro de un
+    artículo periodístico, queramos aplicar otro estilo. También es posible que deseemos que los elementos del menú sean
+    links con texto verde y sin subrayado, pero queramos mantener el resto de links como texto azul con subrayado. Tal y
+    como hemos hecho la definición de estilos no conseguimos hacer esto, ya que estamos modificando todas las listas y
+    todos los links presentes en el documento. CSS permite resolver satisfactoriamente esta problemática para aplicar
+    estilos específicamente allí donde queremos. Veremos cómo próximamente.</p>
+<p id="normas_apa">Texto tomado de: Formas de aplicar CSS: interno y externo. link rel y archivos de extensión css. Comentarios CSS (CU01010D),
+    <a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&catid=75&Itemid=203">
+        https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&catid=75&Itemid=203</a>
+</p>
+</body>
+</html>

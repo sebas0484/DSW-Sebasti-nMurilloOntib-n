@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Estilos Externos</title>
+    <link rel="Stylesheet" href="css/estilos_internos.css">
+    <link rel="Stylesheet" href="css/menu.css">
+    <link rel="Stylesheet" href="css/header.css">
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <a href="index.html"><img class="logo_unad_dos" src="resources/img/img_horizontal_unad.PNG" alt=""></a>
+        </td>
+        <td class="titulo">
+            <h1 class="txt_header">CSS3 - Estilos externos</h1>
+        </td>
+        <td>
+            <img class="img_css3_dos" src="resources/img/img_css3.png" alt="">
+        </td>
+    </tr>
+</table>
+
+<header>
+    <nav class="navegacion">
+        <ul class="menu">
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="#">Conceptos</a>
+                <ul class="submenu">
+                    <li><a href="estilosInternos.html">Estilos internos</a></li>
+                    <li><a href="estilosExternos.html">Estilos externos</a></li>
+                    <li><a href="selectoresCss.html">Selectores CSS</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recursos</a>
+                <ul class="submenu">
+                    <li><a href="recursos_introduccion.html">Introduccion</a></li>
+                    <li><a href="recursos_selectores.html">Selectores</a></li>
+                    <li><a href="recursos_unidades_de_medida.html">Unidades de medida</a></li>
+                    <li><a href="recursos_unidades_de_color.html">Unidades de color</a></li>
+                    <li><a href="recursos_modelo_de_caja.html">Modelo de caja</a></li>
+                    <li><a href="recursos_fondos.html">Fondos</a></li>
+                    <li><a href="recursos__osicionamiento_de_cajas.html">Posicionamiento de cajas</a></li>
+                    <li><a href="recursos_texto_y_tipografia.html">Texto y tipografia</a></li>
+                    <li><a href="contruccion.html">Enlaces</a></li>
+                </ul>
+            </li>
+            <li><a href="autoevaluacion01.html">Autoevaluación</a>
+                <ul class="submenu">
+                    <li><a href="contruccion.html">Seccion #1</a></li>
+                    <li><a href="contruccion.html">Seccion #2</a></li>
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="separador"></div>
+<h3>Estilos externos</h3>
+<p class="txt_inicio">En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan
+    mediante la etiqueta <strong>link</strong>. <br><br>
+    Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML
+    puede enlazar tantos archivos CSS como necesite.</p>
+<p class="txt_inicio">Aunque el CSS interno nos permite unificar en una declaración todos los estilos para un archivo html,
+    seguimos teniendo el problema de tener que repetir la definición de estilos en la cabecera de cada uno de los archivos
+    html de nuestro desarrollo web. Si el desarrollo tiene pocos archivos quizás sea menos problemático, pero cuando el
+    desarrollo tiene cientos o miles de archivos sí se convierte en un verdadero problema, ya que cada vez que introdujéramos
+    cambios habría que hacerlo en los cientos o miles de archivos de que constara el desarrollo.
+    <br><br>
+    Para solventar esta solución se ideó la declaración externa de CSS, basada en declarar los estilos CSS en un archivo
+    independiente que puede servir como referente para dotar de estilos a decenas, cientos o miles de archivos html, que
+    únicamente deberán invocar el nombre de archivo utilizando una sintaxis específica. De este modo un cambio en los
+    estilos habrá que hacerlo únicamente en el archivo de estilos correspondiente, lo cual supone una gran ventaja. Incluso
+    un cambio completo de los estilos de una página web se puede conseguir simplemente sustituyendo el archivo correspondiente.
+    <br><br>
+    Vamos a generar un archivo de estilos independiente. Para ello abre Notepad++ (o el editor de texto que estés usando)
+    y crea un archivo con el siguiente contenido:</p>
+<img src="resources/img/img_css3_externo.png">
+<p class="txt_inicio">Seguimos usando las mismas propiedades CSS y los mismos valores que hemos usado en la forma CSS en
+    línea y en la forma CSS interna.
+    <br><br>
+    Los contenidos que se encuentren entre los símbolos /* …. */ serán considerados comentarios y se pueden usar para
+    introducir información del autor del archivo, versión, etc. así como para escribir aquellas aclaraciones sobre los
+    estilos que se consideren necesarias. Un comentario puede comprender una o varias líneas según se desee.
+    <br><br>
+    Elige Guardar Como… y guarda el archivo con un nombre y extensión css, por ejemplo estilos.css. Asegúrate que la
+    extensión del archivo sea css. No es válido si no tiene esta extensión.
+    <br><br>
+    En nuestro archivo HTML eliminaremos la definición de estilos interna y dejaremos sólo la invocación al archivo escrita
+    con la siguiente sintaxis:</p>
+<img src="resources/img/img_css3_externo_dos.png">
+<p class="txt_inicio">link es una etiqueta que se usa en HTML para establecer vínculos entre un documento HTML y otros
+    recursos como una imagen de icono o una hoja de estilos CSS. En este caso se indica con la propiedad rel (relación
+    o relationship) que el documento HTML debe usar los estilos definidos como texto/css en un archivo con el nombre
+    indicado. Ten en cuenta que si como ruta de archivo indicas simplemente el nombre del archivo, éste debe encontrarse
+    en la misma carpeta en que se encuentre el documento HTML. Si el archivo CSS se encuentra en otra carpeta deberás
+    indicarlo escribiendo una URL completa u bien una URL relativa que determine la ruta.
+    <br><br>
+    Nosotros ubicaremos de momento el archivo CSS en la misma carpeta que el archivo HTML. En el archivo HTML tendremos
+    lo siguiente:</p>
+<img src="resources/img/img_css3_externo_tres.png">
+<p class="txt_inicio">Ahora procedemos a visualizar el archivo HTML en nuestro navegador. Si se está cargando la hoja de
+    estilos correctamente deberemos obtener el mismo resultado que habíamos obtenido con la aplicación de estilos interna.
+    Prueba a hacer distintos cambios en el archivo css y visualiza los resultados.</p>
+<p id="normas_apa">Texto tomado de: Formas de aplicar CSS: interno y externo. link rel y archivos de extensión css. Comentarios CSS (CU01010D),
+    <a href="https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&catid=75&Itemid=203">
+        https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&catid=75&Itemid=203</a>
+</p>
+</body>
+</html>

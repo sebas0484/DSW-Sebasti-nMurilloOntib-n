@@ -1,0 +1,48 @@
+.navegacion{
+    width: 100%;
+    margin: 30px auto;
+    background: #005883;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.navegacion ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+.menu > li > a{
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 150px;
+}
+
+.menu li a:hover{
+    background-color: #50B748;
+    transition: all .3s;
+}
+.submenu{
+    position: absolute;
+    background: #005883;
+    width: 175px;
+    display: none;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: white;
+    font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    display: block;
+}
